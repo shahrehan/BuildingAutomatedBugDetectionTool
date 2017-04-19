@@ -1,0 +1,90 @@
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>FB.BX_BOXING_IMMEDIATELY_UNBOXED</checker>
+<file>/home/ggarg/sa_output/intermediate_r/Proj.java</file>
+<function>Proj.main(java.lang.String[])</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>defect</tag>
+<description>{CovLStr{v1}{Primitive value is boxed and then immediately unboxed.}}</description>
+<line>190</line>
+</event>
+<extra></extra>
+<subcategory>none</subcategory>
+<properties>
+<property>
+<key>fb.priority</key>
+<value>Medium</value>
+</property>
+</properties>
+<typePropertiesGroup>
+<category>FindBugs: Performance</category>
+<impact>Low</impact>
+<type>Bx: Questionable Boxing of primitive value</type>
+<localEffect></localEffect>
+<longDescription>A primitive is boxed, and then immediately unboxed. (&lt;a href=&quot;/docs/en/findbugs/fb_checker_ref.html#FB.BX_BOXING_IMMEDIATELY_UNBOXED&quot; target=&quot;_blank&quot;&gt;From FindBugs&amp;#x2122; description&lt;/a&gt;)</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>FB.DM_DEFAULT_ENCODING</checker>
+<file>/home/ggarg/sa_output/intermediate_r/Proj.java</file>
+<function>Proj.main(java.lang.String[])</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>defect</tag>
+<description>{CovLStr{v1}{Found reliance on default encoding: {0}.}{new java.io.FileReader(String)}}</description>
+<line>49</line>
+</event>
+<extra></extra>
+<subcategory>none</subcategory>
+<properties>
+<property>
+<key>fb.priority</key>
+<value>High</value>
+</property>
+</properties>
+<typePropertiesGroup>
+<category>FindBugs: Internationalization</category>
+<impact>Low</impact>
+<type>Dm: Dubious method used</type>
+<localEffect></localEffect>
+<longDescription>Found a call to a method which will perform a byte to String (or String to byte) conversion, and will assume that the default platform encoding is suitable. (&lt;a href=&quot;/docs/en/findbugs/fb_checker_ref.html#FB.DM_DEFAULT_ENCODING&quot; target=&quot;_blank&quot;&gt;From FindBugs&amp;#x2122; description&lt;/a&gt;)</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_JAVA</domain>
+<lang>Java</lang>
+<checker>FB.VA_FORMAT_STRING_USES_NEWLINE</checker>
+<file>/home/ggarg/sa_output/intermediate_r/Proj.java</file>
+<function>Proj.main(java.lang.String[])</function>
+<ordered>true</ordered>
+<event>
+<main>true</main>
+<tag>defect</tag>
+<description>{CovLStr{v1}{Format string should use %n rather than \n.}}</description>
+<line>229</line>
+</event>
+<extra></extra>
+<subcategory>none</subcategory>
+<properties>
+<property>
+<key>fb.priority</key>
+<value>Medium</value>
+</property>
+</properties>
+<typePropertiesGroup>
+<category>FindBugs: Bad practice</category>
+<impact>Low</impact>
+<type>FS: Format string problem</type>
+<localEffect></localEffect>
+<longDescription>This format string include a newline character (\n). (&lt;a href=&quot;/docs/en/findbugs/fb_checker_ref.html#FB.VA_FORMAT_STRING_USES_NEWLINE&quot; target=&quot;_blank&quot;&gt;From FindBugs&amp;#x2122; description&lt;/a&gt;)</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

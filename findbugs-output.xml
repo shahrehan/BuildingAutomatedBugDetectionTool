@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0-dev-20140429-1103397" sequence="0" timestamp="1459281915000" analysisTimestamp="1459281917564" release="">
+  <Project projectName="coverityEmit">
+    <Jar>/home/ggarg/sa_output/intermediate_r/output/java-private/coverity_ac.jar</Jar>
+    <AuxClasspathEntry>/home/ggarg/sa_output/intermediate_r/output/java-private/coverity_cp_n_jars.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="BX_BOXING_IMMEDIATELY_UNBOXED" priority="2" abbrev="Bx" category="PERFORMANCE" instanceHash="4c772dbe549070e4c50e548a9df30a9e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="18">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Primitive value is boxed and then immediately unboxed.]-]-</LongMessage>
+    <Class classname="Proj" primary="true">
+      <SourceLine classname="Proj" start="15" end="237" sourcefile="Proj.java" sourcepath="Proj.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[Proj]-]-</Message>
+    </Class>
+    <Method classname="Proj" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="Proj" start="20" end="237" startBytecode="0" endBytecode="3659" sourcefile="Proj.java" sourcepath="Proj.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[Proj.main(String[])]-]-</Message>
+    </Method>
+    <SourceLine classname="Proj" primary="true" start="190" end="190" startBytecode="1020" endBytecode="1020" sourcefile="Proj.java" sourcepath="Proj.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" abbrev="Dm" category="I18N" instanceHash="4b0ffd8e0f4f4bddd670804dd428844e" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="19">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Found reliance on default encoding: -[0]-.]--[new java.io.FileReader(String)]-]-</LongMessage>
+    <Class classname="Proj" primary="true">
+      <SourceLine classname="Proj" start="15" end="237" sourcefile="Proj.java" sourcepath="Proj.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[Proj]-]-</Message>
+    </Class>
+    <Method classname="Proj" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="Proj" start="20" end="237" startBytecode="0" endBytecode="3659" sourcefile="Proj.java" sourcepath="Proj.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[Proj.main(String[])]-]-</Message>
+    </Method>
+    <Method classname="java.io.FileReader" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.FileReader" start="58" end="59" startBytecode="0" endBytecode="68" sourcefile="FileReader.java" sourcepath="java/io/FileReader.java"/>
+      <Message>-[CovLStr-[v1]--[Called method -[0]-]--[new java.io.FileReader(String)]-]-</Message>
+    </Method>
+    <SourceLine classname="Proj" primary="true" start="49" end="49" startBytecode="97" endBytecode="97" sourcefile="Proj.java" sourcepath="Proj.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugInstance type="VA_FORMAT_STRING_USES_NEWLINE" priority="2" abbrev="FS" category="BAD_PRACTICE" instanceHash="85abb87aad0a2088b3b011a044f5e94" instanceOccurrenceNum="0" instanceOccurrenceMax="0" rank="20">
+    <ShortMessage></ShortMessage>
+    <LongMessage>-[CovLStr-[v1]--[Format string should use %n rather than \n.]-]-</LongMessage>
+    <Class classname="Proj" primary="true">
+      <SourceLine classname="Proj" start="15" end="237" sourcefile="Proj.java" sourcepath="Proj.java">
+        <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+      </SourceLine>
+      <Message>-[CovLStr-[v1]--[In class -[0]-]--[Proj]-]-</Message>
+    </Class>
+    <Method classname="Proj" name="main" signature="([Ljava/lang/String;)V" isStatic="true" primary="true">
+      <SourceLine classname="Proj" start="20" end="237" startBytecode="0" endBytecode="3659" sourcefile="Proj.java" sourcepath="Proj.java"/>
+      <Message>-[CovLStr-[v1]--[In method -[0]-]--[Proj.main(String[])]-]-</Message>
+    </Method>
+    <Method classname="java.io.PrintStream" name="format" signature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.io.PrintStream" start="965" end="977" startBytecode="0" endBytecode="278" sourcefile="PrintStream.java" sourcepath="java/io/PrintStream.java"/>
+      <Message>-[CovLStr-[v1]--[Called method -[0]-]--[java.io.PrintStream.format(String, Object[])]-]-</Message>
+    </Method>
+    <String value="bug: %s in %s, pair: (%s, %s), support: %d, confidence: %.2f%%\n" role="STRING_FORMAT_STRING">
+      <Message>-[CovLStr-[v1]--[Format string &quot;-[0]-&quot;]--[bug: %s in %s, pair: (%s, %s), support: %d, confidence: %.2f%%\n]-]-</Message>
+    </String>
+    <SourceLine classname="Proj" primary="true" start="229" end="229" startBytecode="1418" endBytecode="1418" sourcefile="Proj.java" sourcepath="Proj.java">
+      <Message>-[CovLStr-[v1]--[Here]-]-</Message>
+    </SourceLine>
+  </BugInstance>
+  <BugCategory category="BAD_PRACTICE">
+    <Description>Bad practice</Description>
+  </BugCategory>
+  <BugCategory category="PERFORMANCE">
+    <Description>Performance</Description>
+  </BugCategory>
+  <BugCategory category="I18N">
+    <Description>Internationalization</Description>
+  </BugCategory>
+  <BugPattern type="VA_FORMAT_STRING_USES_NEWLINE" abbrev="FS" category="BAD_PRACTICE">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="BX_BOXING_IMMEDIATELY_UNBOXED" abbrev="Bx" category="PERFORMANCE">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugPattern type="DM_DEFAULT_ENCODING" abbrev="Dm" category="I18N">
+    <ShortDescription></ShortDescription>
+    <Details><![CDATA[]]></Details>
+  </BugPattern>
+  <BugCode abbrev="Bx">
+    <Description>Questionable Boxing of primitive value</Description>
+  </BugCode>
+  <BugCode abbrev="Dm">
+    <Description>Dubious method used</Description>
+  </BugCode>
+  <BugCode abbrev="FS">
+    <Description>Format string problem</Description>
+  </BugCode>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Tue, 29 Mar 2016 16:05:15 -0400" total_classes="1" referenced_classes="29" total_bugs="3" total_size="121" num_packages="1" java_version="1.8.0_45" vm_version="25.45-b02" cpu_seconds="10.46" clock_seconds="2.22" peak_mbytes="303.76" alloc_mbytes="981.50" gc_seconds="0.15" priority_2="2" priority_1="1">
+    <FileStats path="Proj.java" bugCount="3" size="121" bugHash="bfa30b12eb7f325306a24533560f78c2"/>
+    <PackageStats package="" total_bugs="3" total_types="1" total_size="121" priority_2="2" priority_1="1">
+      <ClassStats class="Proj" sourceFile="Proj.java" interface="false" size="121" bugs="3" priority_2="2" priority_1="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="398" invocations="372" avgMicrosecondsPerInvocation="1071" maxMicrosecondsPerInvocation="153320" standardDeviationMircosecondsPerInvocation="8025"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="114" invocations="3" avgMicrosecondsPerInvocation="38269" maxMicrosecondsPerInvocation="74510" standardDeviationMircosecondsPerInvocation="26414"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="111" invocations="3" avgMicrosecondsPerInvocation="37038" maxMicrosecondsPerInvocation="72867" standardDeviationMircosecondsPerInvocation="26272"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="78" invocations="29" avgMicrosecondsPerInvocation="2698" maxMicrosecondsPerInvocation="21772" standardDeviationMircosecondsPerInvocation="4475"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="75" invocations="86" avgMicrosecondsPerInvocation="875" maxMicrosecondsPerInvocation="11566" standardDeviationMircosecondsPerInvocation="1566"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="70" invocations="2" avgMicrosecondsPerInvocation="35145" maxMicrosecondsPerInvocation="70140" standardDeviationMircosecondsPerInvocation="34995"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="66" invocations="2" avgMicrosecondsPerInvocation="33092" maxMicrosecondsPerInvocation="65940" standardDeviationMircosecondsPerInvocation="32848"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="63" invocations="338" avgMicrosecondsPerInvocation="188" maxMicrosecondsPerInvocation="2881" standardDeviationMircosecondsPerInvocation="392"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.StreamResourceTracker" totalMilliseconds="56" invocations="4" avgMicrosecondsPerInvocation="14107" maxMicrosecondsPerInvocation="20451" standardDeviationMircosecondsPerInvocation="5143"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="51" invocations="2" avgMicrosecondsPerInvocation="25960" maxMicrosecondsPerInvocation="51834" standardDeviationMircosecondsPerInvocation="25874"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="43" invocations="2" avgMicrosecondsPerInvocation="21863" maxMicrosecondsPerInvocation="32744" standardDeviationMircosecondsPerInvocation="10881"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="39" invocations="50" avgMicrosecondsPerInvocation="785" maxMicrosecondsPerInvocation="15727" standardDeviationMircosecondsPerInvocation="2306"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="39" invocations="2" avgMicrosecondsPerInvocation="19531" maxMicrosecondsPerInvocation="25492" standardDeviationMircosecondsPerInvocation="5961"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="31" invocations="29" avgMicrosecondsPerInvocation="1071" maxMicrosecondsPerInvocation="8865" standardDeviationMircosecondsPerInvocation="1842"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="29" invocations="2" avgMicrosecondsPerInvocation="14584" maxMicrosecondsPerInvocation="29014" standardDeviationMircosecondsPerInvocation="14430"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="28" invocations="2" avgMicrosecondsPerInvocation="14133" maxMicrosecondsPerInvocation="26725" standardDeviationMircosecondsPerInvocation="12592"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="27" invocations="29" avgMicrosecondsPerInvocation="953" maxMicrosecondsPerInvocation="12502" standardDeviationMircosecondsPerInvocation="2383"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ReturnPathTypeDataflowFactory" totalMilliseconds="27" invocations="1" avgMicrosecondsPerInvocation="27479" maxMicrosecondsPerInvocation="27479" standardDeviationMircosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

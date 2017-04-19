@@ -1,0 +1,159 @@
+{
+  "header" : {
+    "format" : "commit preview report",
+    "version" : 2
+  },
+  "analysisInfo" : {
+    "ownerAssignmentRule" : "default_component_owner",
+    "comparisonSnapshotId" : null,
+    "reportTimestamp" : "2016-03-29T20:09:59.786Z",
+    "user" : "admin",
+    "command" : "/usr/local/cov-analysis-linux64-8.0.0/bin/cov-analyze --dir /home/ggarg/sa_output/intermediate_r --allow-unmerged-emits"
+  },
+  "issueInfo" : [ {
+    "cid" : 10226,
+    "mergeKey" : "503853de59b9e66a0b67acbb99bb2690",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-03-29T20:09:59.786Z",
+    "occurrences" : [ {
+      "checker" : "NULL_RETURNS",
+      "file" : "/home/ggarg/sa_output/intermediate_r/Proj.java",
+      "function" : "Proj.main(java.lang.String[])",
+      "extra" : "readLine",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 64,
+      "mainEventDescription" : "Calling a method on null object \"line\".",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10227,
+    "mergeKey" : "23deccc9273787ebc39ae7b09d0c958f",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-03-29T20:09:59.786Z",
+    "occurrences" : [ {
+      "checker" : "RESOURCE_LEAK",
+      "file" : "/home/ggarg/sa_output/intermediate_r/Proj.java",
+      "function" : "Proj.main(java.lang.String[])",
+      "extra" : "FileReader",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "exceptional_path",
+      "mainEventLineNumber" : 96,
+      "mainEventDescription" : "Variable \"read\" going out of scope leaks the resource it refers to.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10228,
+    "mergeKey" : "0a91a77177b13ec5bb7e1e3e891605fa",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-03-29T20:09:59.786Z",
+    "occurrences" : [ {
+      "checker" : "FB.BX_BOXING_IMMEDIATELY_UNBOXED",
+      "file" : "/home/ggarg/sa_output/intermediate_r/Proj.java",
+      "function" : "Proj.main(java.lang.String[])",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 190,
+      "mainEventDescription" : "Primitive value is boxed and then immediately unboxed.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10229,
+    "mergeKey" : "fc4d12a75fdfc673e07301edcd12743a",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-03-29T20:09:59.786Z",
+    "occurrences" : [ {
+      "checker" : "FB.DM_DEFAULT_ENCODING",
+      "file" : "/home/ggarg/sa_output/intermediate_r/Proj.java",
+      "function" : "Proj.main(java.lang.String[])",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 49,
+      "mainEventDescription" : "Found reliance on default encoding: new java.io.FileReader(String).",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10230,
+    "mergeKey" : "78be5d8731c85c69163a3cc5f649fb21",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-03-29T20:09:59.786Z",
+    "occurrences" : [ {
+      "checker" : "FB.VA_FORMAT_STRING_USES_NEWLINE",
+      "file" : "/home/ggarg/sa_output/intermediate_r/Proj.java",
+      "function" : "Proj.main(java.lang.String[])",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 229,
+      "mainEventDescription" : "Format string should use %n rather than \\n.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : null
+  } ]
+}

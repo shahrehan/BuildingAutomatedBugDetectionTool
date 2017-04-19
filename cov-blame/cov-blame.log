@@ -1,0 +1,12 @@
+[LOG] run: /usr/local/cov-analysis-linux64-8.0.0/bin/cov-format-errors --dir /home/ggarg/sa_output/intermediate_r --json-output-v4 /home/ggarg/sa_output/intermediate_r/output/cov-blame/errors.json --outputdir /home/ggarg/sa_output/intermediate_r/output
+[LOG] /usr/local/cov-analysis-linux64-8.0.0/bin/cov-format-errors exits successfully.
+[INFO] Computing likely owner for 10229 [fc4d12a75fdfc673e07301edcd12743a]:
+[INFO] 	default_component_owner: none
+[INFO] Computing likely owner for 10226 [503853de59b9e66a0b67acbb99bb2690]:
+[INFO] 	default_component_owner: none
+[INFO] Computing likely owner for 10227 [23deccc9273787ebc39ae7b09d0c958f]:
+[INFO] 	default_component_owner: none
+[INFO] Computing likely owner for 10228 [0a91a77177b13ec5bb7e1e3e891605fa]:
+[INFO] 	default_component_owner: none
+[INFO] Computing likely owner for 10230 [78be5d8731c85c69163a3cc5f649fb21]:
+[INFO] 	default_component_owner: none
